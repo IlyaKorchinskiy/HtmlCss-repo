@@ -1,5 +1,12 @@
-html, body {
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
     height: 100%;
+
 }
 
 .container {
@@ -8,15 +15,53 @@ html, body {
     min-height: 100%;
     display: flex;
     flex-direction: column;
+    background-color: #f8f8f8;
 }
 
 header {
     display: flex;
     justify-content: space-between;
+    height: 100px;
 }
 
 .site-content {
     flex: 1;
+}
+
+nav {
+    width: 100%;
+    background-color: #2288a8;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+nav a {
+    color: #fff;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: #84cded;
+    color: #2288a8;
+}
+
+nav .active {
+    background-color: #84cded;
+    color: #2288a8;
+}
+
+h2 {
+    margin: 30px 0;
+}
+
+footer {
+    height: 100px;
+    margin-top: 20px;
 }
 
 /*catalog*/
@@ -27,30 +72,90 @@ header {
 }
 
 .item {
-/*    margin-right: 30px;*/
+    /*    margin-right: 30px;*/
     text-align: center;
     outline: 1px solid grey;
     margin: 0 0 30px 30px;
 }
 
+.item a {
+    display: block;
+}
+
 .item img {
-    width: 200px;    
+    width: 200px;
+}
+
+.item p {
+    padding: 10px 0;
 }
 
 /*product*/
 
 .item-content img {
     width: 300px;
+    border: 1px solid #736056;
+}
+
+.item-content h4 {
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #eaeaea;
+}
+
+.item-content .short-desc {
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+
+.item-content .desc {
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.item-content .characs {
+    margin-left: 30px;
+}
+
+.item-content .characs li {
+    font-size: 18px;
+    line-height: 22px;
+    list-style-image: url(../photo/gas-26.png);
+}
+
+h4 {
+    margin: 20px 0; 
 }
 
 /*contact*/
 
 form {
-    width: 300px;
+    width: 400px;
 }
 
 form label {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+form textarea {
+    margin-bottom: 10px;
+}
+
+form input {
+    width: 200px;
+    height: 20px;
+    color: #736056;
+    font-size: 14px;
+}
+
+form button {
+    padding: 5px;
 }
