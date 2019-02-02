@@ -6,7 +6,7 @@
 html,
 body {
     height: 100%;
-
+    font-family: sans-serif;
 }
 
 .container {
@@ -19,9 +19,7 @@ body {
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    height: 100px;
+    min-height: 200px;
 }
 
 .site-content {
@@ -43,6 +41,7 @@ nav a {
     padding: 15px;
     text-decoration: none;
     text-align: center;
+    font-size: 18px;
 }
 
 nav a:hover {
@@ -60,8 +59,30 @@ h2 {
 }
 
 footer {
-    height: 100px;
+    min-height: 100px;
     margin-top: 20px;
+    background-color: #736056;
+    color: #fff;
+    padding: 15px;
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    outline: 1px solid #dad4da;
+    margin-bottom: 20px;
+}
+
+.footer-menu a {
+    display: block;
+    margin: 15px 30px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-menu a:hover {
+    text-decoration: underline;
 }
 
 /*catalog*/
@@ -94,7 +115,11 @@ footer {
 
 .item-content img {
     width: 300px;
-    border: 1px solid #736056;
+    outline: 1px solid #736056;
+}
+
+.item-content img:hover {
+    outline: none;
 }
 
 .item-content h4 {
@@ -119,6 +144,12 @@ footer {
     text-align: left;
 }
 
+.item-content p:first-letter {
+    color: #6d8836;
+    font-size: 24px;
+    font-family: serif;
+}
+
 .item-content .characs {
     margin-left: 30px;
 }
@@ -126,11 +157,33 @@ footer {
 .item-content .characs li {
     font-size: 18px;
     line-height: 22px;
-    list-style-image: url(../photo/gas-26.png);
+    list-style-image: url(../img/gas-26.png);
 }
 
 h4 {
-    margin: 20px 0; 
+    margin: 20px 0;
+}
+
+.tech {
+    border: 1px solid #dad4da;
+    text-align: center;
+    border-collapse: collapse;
+    margin-top: 20px;
+
+}
+
+.tech td {
+    border: 1px solid #dad4da;
+    padding: 10px;
+}
+
+.tech caption {
+    padding: 10px;
+    font-size: 18px;
+}
+
+.tech tr:first-child {
+    height: 50px;
 }
 
 /*contact*/
@@ -152,8 +205,19 @@ form textarea {
 form input {
     width: 200px;
     height: 20px;
-    color: #736056;
     font-size: 14px;
+    color: #6d8836;
+
+}
+
+form input[type="text"] {
+    text-transform: capitalize;
+}
+
+form input:focus {
+    background-color: #dad4da;
+    color: #736056;
+
 }
 
 form button {
