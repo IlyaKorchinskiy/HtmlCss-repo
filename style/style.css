@@ -18,12 +18,16 @@ body {
     background-color: #f8f8f8;
 }
 
+.site-content {
+    flex: 1;
+}
+
 header {
     min-height: 200px;
 }
 
-.site-content {
-    flex: 1;
+.logo {
+    margin-left: 30px;
 }
 
 nav {
@@ -85,6 +89,11 @@ footer {
     text-decoration: underline;
 }
 
+.footer-bottom {
+    display: flex;
+    justify-content: flex-end;
+}
+
 /*catalog*/
 
 .catalog {
@@ -114,12 +123,51 @@ footer {
 /*product*/
 
 .item-content img {
-    width: 300px;
+    width: 400px;
     outline: 1px solid #736056;
 }
 
 .item-content img:hover {
     outline: none;
+}
+
+.photo-desc {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.short-desc {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1;
+}
+
+.buttons a {
+    display: block;
+    padding: 20px;
+    background-color: #6d8836;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 5px 0px rgba(33, 33, 33, 0.35);
+}
+
+.buttons a:hover {
+    background-color: #736056;
+}
+
+.buttons a:active {
+    box-shadow: 0px 0px 5px 0px rgba(33, 33, 33, 0.35);
+
 }
 
 .item-content h4 {
@@ -129,14 +177,7 @@ footer {
     background-color: #eaeaea;
 }
 
-.item-content .short-desc {
-    color: #707070;
-    font-size: 14px;
-    font-style: italic;
-    line-height: 16px;
-}
-
-.item-content .desc {
+.item-content p {
     color: #484343;
     font-size: 16px;
     font-weight: 400;
@@ -155,20 +196,21 @@ footer {
 }
 
 .item-content .characs li {
-    font-size: 18px;
+    font-size: 16px;
+    color: #484343;
     line-height: 22px;
     list-style-image: url(../img/gas-26.png);
 }
 
 h4 {
-    margin: 20px 0;
+    margin-bottom: 20px;
 }
 
 .tech {
     border: 1px solid #dad4da;
     text-align: center;
     border-collapse: collapse;
-    margin-top: 20px;
+    margin: 20px 0;
 
 }
 
