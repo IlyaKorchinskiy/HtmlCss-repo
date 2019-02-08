@@ -1,0 +1,907 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400,700');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+}
+
+.container {
+    max-width: 1366px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    outline: 1px solid #d9dee1;
+}
+
+.site-content {
+    flex: 1;
+}
+
+.slider {
+    min-height: 800px;
+    background-size: cover;
+    position: relative;
+    background: url(img/slider-img.jpg) no-repeat center;
+}
+
+.site-padding {
+    padding: 0 98px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    margin-top: 63px;
+    margin-right: 70px;
+}
+
+.header-menu {
+    list-style-type: none;
+    display: flex;
+    margin-top: 57px;
+    flex-wrap: wrap;
+}
+
+.header-menu a {
+    display: block;
+    padding: 10px 13px;
+    color:  #8c8c8c;
+    font-size: 14px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    text-align: right;
+    text-decoration: none;
+}
+
+.header-menu .active {
+    color: #212121;
+    font-size: 14px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    text-align: right;
+    border-bottom: 3px solid #212121;
+    padding-bottom: 7px;
+}
+
+.header-menu a:hover {
+    color:  #212121;
+}
+
+/*slider*/
+
+.slider-content h4 {
+    margin-top: 277px;
+    color:  #43a047;
+    font-size: 18px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    text-align: left;
+}
+
+.slider-content h2 {
+    margin-top: 14px;
+    color:  #212121;
+    font-size: 62px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 100;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: -3px;
+}
+
+.slider-content p {
+    margin-top: 20px;
+    color:  #6c6c6c;
+    font-size: 14px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    line-height: 24px;/* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    width: 458px;
+}
+
+.order {
+    display: inline-block;
+    padding: 16px 31px;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-top: 25px;
+    background-color:  #ffffff;
+    box-shadow: 0px 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
+    color:  #212121;
+    font-size: 18px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.order:hover {
+    background-color: #d9dee1;
+}
+
+.order:active {
+    position: relative;
+    top: 2px;
+    box-shadow: 0px 0px 4.85px 0.15px rgba(33, 33, 33, 0.35);
+}
+
+.slider-nav {
+    position: absolute;
+    bottom: 19px;
+    width: 82%;
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-nav li {
+    padding: 5px;
+}
+
+.slider-nav a {
+    display: block;
+    border-radius: 50%;
+    background-color:  rgba(33, 33, 33, 0.2);
+    width: 30px;
+    height: 30px;
+}
+
+.slider-nav a:hover {
+    background-color:  #212121;
+}
+
+.slider-nav .active-slider {
+    background-color:  #212121;
+    width: 40px;
+    height: 40px;
+    margin: 0;
+}
+
+/*featured products*/
+
+.featured-products {
+    padding-top: 101px;
+    padding-bottom: 120px;
+}
+
+.featured-products .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.featured-nav {
+    display: flex;
+    list-style-type: none;
+}
+
+.featured-nav a {
+    display: block;
+    padding: 19px 9px;
+    color:  #6c6c6c;
+    font-size: 36px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    text-align: left;
+    text-decoration: none;
+    border-bottom: 1px solid #6c6c6c;
+}
+
+.featured-nav a:hover {
+    color: #212121;
+}
+
+.featured-nav .active {
+    color:  #212121;
+    font-size: 36px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    text-align: left;
+    padding-bottom: 17px;
+    border-bottom: 3px solid #212121;
+}
+
+.explore-all {
+    display: block;
+    padding: 10px 0;
+    color:  #212121;
+    font-size: 18px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 24px;/* Приближение из-за подстановки шрифтов */
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.explore-all:hover {
+    text-decoration: underline;
+}
+
+.featured-products .featured-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.featured-content .item {
+    position: relative;
+}
+
+.featured-content .product-hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    border: 1px solid #9c9c9c;
+    background-color:  #ffffff;
+    opacity: 0.9;
+    width: 268px;
+    height: 268px;
+}
+
+.featured-content .item:hover .product-hover {
+    display: block;
+}
+
+.product-hover .item-link {
+    display: block;
+    margin: 62px auto 0;
+    color: #212121;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    background-color:  #ffffff;
+    box-shadow: 0px 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
+    width: 48px;
+    height: 48px;
+}
+
+.product-hover .item-link:hover {
+    background-color: #d9dee1;
+}
+
+.product-hover h4 {
+    color:  #212121;
+    font-size: 22px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    text-align: center;
+    margin-top: 19px;
+}
+
+.product-hover p {
+    color:  #6c6c6c;
+    font-size: 14px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    line-height: 22px;/* Приближение из-за подстановки шрифтов */
+    text-align: center;
+    margin-top: 20px;
+}
+
+/*promo*/
+
+.promo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.promo-1, .promo-2 {
+    width: 683px;
+    height: 683px;
+    padding-left: 52px;
+    padding-top: 228px;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center;
+}
+
+.promo-1 {
+    background: url(img/promo-img1.jpg) no-repeat;
+}
+
+.promo-2 {
+    background: url(img/promo-img2.jpg) no-repeat;
+}
+
+.promo h5 {
+    color:  #1e88e5;
+    font-size: 18px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.promo h3 {
+    margin-top: 18px;
+    color:  #212121;
+    font-size: 36px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    text-align: left;
+}
+
+.promo p {
+    margin-top: 19px;
+    color:  #6c6c6c;
+    font-size: 14px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    line-height: 24px;/* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    width: 374px;
+}
+
+/*trending-products*/
+
+.trending-products {
+    padding-top: 119px;
+    padding-bottom: 90px;
+}
+
+.trending-products .head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 52px;
+}
+
+.trending-products h3 {
+    color:  #212121;
+    font-size: 36px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    text-align: left;
+}
+
+.trending-products .content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.trending-products .item {
+    margin-bottom: 28px;     
+    width: 370px;
+    height: 370px;
+    text-align: center;
+}
+
+.trending-products .item:hover img {
+    outline: 1px solid #9c9c9c;
+}
+
+.trending-products img {
+    width: 370px;
+}
+
+/*slider-2*/
+
+.slider-2 {
+    background: url(img/slider-2.jpg) center;
+    padding-top: 287px;
+    box-sizing: border-box;
+    background-size: cover;
+}
+
+.slider-2 h4 {
+    margin: 0;
+}
+
+/*exclusive*/
+
+.exclusive {
+    padding: 90px 83px 120px;
+    display: flex;
+    justify-content: center;
+}
+
+.promo-3 {
+    width: 570px;
+    height: 570px;
+    background-size: cover;
+    background: url(img/product-1-lg.jpg) center;
+    padding-left: 31px;
+    padding-top: 186px;
+    box-sizing: border-box;
+    margin: 30px 15px 0;
+}
+
+.promo-3 p {
+    max-width: 332px;
+}
+
+.exclusive-right {
+    display: flex;
+    flex-wrap: wrap;
+    width: 570px;
+    height: 570px;
+    justify-content: space-between;
+    margin: 30px 15px 0;
+}
+
+.exclusive-right .item {
+    width: 270px;
+    height: 270px;
+    margin-bottom: 30px;
+}
+
+.exclusive .item:hover img {
+    outline:  1px solid #9c9c9c;
+}
+
+/*mobile*/
+
+.mobile {
+    background: url(img/back-img.jpg) center;
+    background-size: cover;
+    height: 516px;
+    padding-top: 125px;
+    box-sizing: border-box;
+}
+
+.mobile h4 {
+    color:  #6c6c6c;
+    font-size: 18px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.mobile h2 {
+    color:  #212121;
+    font-size: 62px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 100;
+    line-height: 72px;/* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    text-transform: uppercase;
+    width: 407px;
+    letter-spacing: -5px;
+    margin-top: 17px;
+}
+
+.mobile p {
+    color:  #6c6c6c;
+    font-size: 22px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    line-height: 24px;/* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    width: 413px;
+    margin-top: 20px;
+    letter-spacing: -0.4px;
+}
+
+.mobile .links {
+    display: flex;
+    margin-top: 30px;
+}
+
+.mobile .link {
+    width: 135px;
+    height: 40px;
+    margin-right: 7px;
+    border: 3px solid transparent;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.mobile .link:hover {
+    position: relative;
+    top: -2px;
+}
+
+.mobile .link img {
+    width: 135px;
+}
+
+/*footer*/
+
+.footer {
+    padding-top: 120px;
+    padding-bottom: 30px;
+    background-color: #f7f7f7;
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-menu h5 {
+    color:  #6c6c6c;
+    font-size: 18px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-menu p {
+    color:  #212121;
+    font-size: 14px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    line-height: 22px;/* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    margin-top: 20px;
+}
+
+.contact {
+    width: 221px;
+    margin-bottom: 30px;
+}
+
+.info {
+    width: 422px;
+    margin-bottom: 30px;
+}
+
+.touch {
+    width: 370px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.info .links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 13px;
+}
+
+.info .links a {
+    display: block;
+    text-decoration: none;
+    color:  #212121;
+    font-size: 14px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    text-align: left;
+    text-transform: uppercase;
+    margin-top: 12px;
+}
+
+.info .links a:hover {
+    text-decoration: underline;
+}
+
+.info .links a:active {
+    color: #d9dee1;
+}
+
+.touch input[type="email"] {
+    margin-top: 26px;
+    border-width: 1px solid #d9dee1;
+    background-color:  #ffffff;
+    width: 370px;
+    height: 48px;
+    color:  #6c6c6c;
+    font-size: 14px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    text-align: left;
+    padding: 17px 40px 17px 19px;
+    box-sizing: border-box;
+}
+
+.touch button {
+    position: absolute;
+    bottom: 10px;
+    right: 14px;
+    color: #6c6c6c;
+    font-size: 22px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    text-align: left;
+    border: none;
+    background-color: transparent;
+}
+
+.touch button:hover {
+    color: #43a047;
+    cursor: pointer;
+}
+
+input:focus {
+    outline: none;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 29px;
+    align-items: center;
+}
+
+.social p {
+    color:  #6c6c6c;
+    font-size: 12px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.social .links {
+    list-style-type: none;
+    display: flex;
+}
+
+.social .links a {
+    display: block;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    color:  #f7f7f7;
+    font-size: 16px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    background-color: #6c6c6c;
+    margin: 0 3px;
+}
+
+.social .links a:hover {
+    background-color: #8c8c8c;
+    transform: scale(1.1);
+}
+
+/*catalog*/
+
+.catalog-header {
+    min-height: 258px;
+    background-color: #f5f5f5;
+}
+
+.page-heading {
+    min-height: 102px;
+    background-color: #f5f5f5;
+}
+
+.page-heading h1 {
+    color:  #212121;
+    font-size: 62px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 100;
+    line-height: 72px;/* Приближение из-за подстановки шрифтов */
+    text-align: left;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.catalog-menu {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.menu a {
+    display: block;
+    text-decoration: none;
+    color:  #6c6c6c;
+    font-size: 18px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.catalog-menu a {
+    text-align: left;
+    padding: 21px 21px 21px 7px;
+}
+
+.catalog-menu .active {
+    color: #212121;
+    border-bottom: 3px solid #212121;
+    padding-bottom: 19px;
+}
+
+.catalog-menu a:hover {
+    color: #212121;
+    border-bottom: 1px solid #6c6c6c;
+}
+
+.catalog .items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.catalog .items .item {
+    width: 370px;
+    margin-bottom: 30px;
+}
+
+.catalog .item:hover img {
+    outline: 1px solid #9c9c9c;
+}
+
+.catalog .more {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 140px;
+}
+.more button {
+    color:  #212121;
+    font-size: 42px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    background: none;
+    border: none;
+    transition: 1s;
+}
+
+.more button:hover {
+    cursor: pointer;
+    transform: rotate(360deg);
+}
+
+/*product*/
+
+.product-header {
+    min-height: 119px;
+}
+
+.product nav {
+    background-color: #f4f4f4;
+}
+
+.product-menu {
+    justify-content: center;
+    margin-bottom: 72px;
+}
+
+.product-menu a {
+    text-align: center;
+    padding: 28px 20px;
+}
+
+.product-menu a:hover {
+    color: #212121;
+}
+
+.product-menu .active {
+    color:  #212121;
+}
+
+.product .photo-desc {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 126px;
+}
+
+.product .photo {
+    width: 570px;
+    margin-right: 22px;
+}
+
+.product .photos {
+    text-align: center;
+}
+
+.product .description {
+    padding: 47px 34px 0 34px;
+}
+
+.product .description h1 {
+    color:  #212121;
+    font-size: 36px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    text-align: center;
+}
+
+.product .description h5 {
+    color:  #e53935;
+    font-size: 18px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+
+.product .description .price {
+    color:  #212121;
+    font-size: 36px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.product .description .price span {
+    font-size: 72px;
+    line-height: 72px;
+}
+
+.product .description .order {
+    display: inline-block;
+    padding: 27px 160px;
+    background-color:  #f44336;
+    box-shadow: 0px 2px 5px 0px rgba(33, 33, 33, 0.35);
+    color:  #ffffff;
+    font-size: 22px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 3px;
+    border-radius: 40px;
+    text-transform: uppercase;
+    margin-top: 31px;
+}
+
+.product .description .order:hover {
+    transform: scale(1.03);
+}
+
+.product .description .order:active {
+    background-color: #d9dee1;
+}
+
+.product .desc {
+    margin-top: 45px;
+    width: 499px;
+}
+
+.product .desc p {
+    color:  #212121;
+    font-size: 16px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    line-height: 24px;/* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+/*contact*/
+
+.address-block {
+    display: flex;
+    justify-content: space-between;
+    margin: 71px 0;
+}
+
+.address-card {
+    border: 1px solid #9c9c9c;
+    width: 368px;
+    height: 368px;
+    margin-bottom: 51px;
+    text-align: center;
+}
+
+.address-card .icon {
+    color:  #212121;
+    font-size: 48px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    margin-top: 48px;
+}
+
+.address-card h4 {
+    color:  #212121;
+    font-size: 22px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-top: 26px;
+}
+
+.address-card p, .address-card h6 {
+    color:  #6c6c6c;
+    font-size: 14px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.address-card h6 {
+    margin-top: 10px;
+}
+
+.address-card .phone, .address-card .e-mail {
+    color:  #212121;
+}
+
+.address-card .address {
+    font-weight: 300;
+}
